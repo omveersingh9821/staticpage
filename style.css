@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif
+}
+body{
+    /* Because position fixed do not take any space */
+    padding-top: 75px;
+    padding-bottom:75px;
+}
+.header{
+    height: 10vh;
+    background-color: rgb(199, 215, 228);
+    color: grey;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;  
+}
+.container-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.content{
+    width: 350px;
+    height: 550px;
+    margin: 10px;
+    padding: 10px;
+    color: grey;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.content img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;  
+    border-radius: 50px; 
+    cursor: pointer; 
+}
+
+
+.description{
+   margin-top: 0.5rem;
+   margin-bottom: 2rem;
+   font-size: 18px;
+}
+.content a{
+    position: relative;
+    left: 70%;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(114, 114, 213);
+    border-radius: 20px;
+    padding:10px;
+    
+}
+.content a:hover{
+    background-color: aliceblue;
+    color: grey; 
+}
+img:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.footer{
+    height: 10vh;
+    padding-top: 20px;
+    background-color: aliceblue;
+    color: grey;
+    text-align: center;
+    font-size: 25px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
